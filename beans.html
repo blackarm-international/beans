@@ -1,10 +1,9 @@
 <html>
-	<head>
-		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-		<meta content="utf-8" http-equiv="encoding">
-        <title>I'm vegan.</title>
-		<style>
-		    #dark {
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <style>
+            #dark {
                 background-color: rgb(55, 57, 63);
                 border: solid 1px black;
                 position: absolute;
@@ -14,7 +13,7 @@
                 height: 200px;
                 padding:50px;
             }
-		    #light {
+            #light {
                 background-color: rgb(255, 255, 255);
                 border: solid 1px black;
                 position: absolute;
@@ -24,7 +23,7 @@
                 height: 200px;
                 padding:50px;
             }
-		    #controls {
+            #controls {
                 background-color: rgb(255, 255, 255);
                 border: solid 1px black;
                 position: absolute;
@@ -37,16 +36,16 @@
             p {
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             }
-		</style>
-	</head>
-	<body>
-		<div id="dark">
+        </style>
+    </head>
+    <body>
+        <div id="dark">
             <p id="darkSprouts">Sprouts</p>
             <p id="darkMembers">Members</p>
             <p id="darkBeans">Beans</p>
             <p id="darkBots">Bots</p>
         </div>
-		<div id="light">
+        <div id="light">
             <p id="lightSprouts">Sprouts</p>
             <p id="lightMembers">Members</p>
             <p id="lightBeans">Beans</p>
@@ -113,33 +112,34 @@ function colorText(){
     green = document.getElementById("sproutsGreen").value;
     blue = document.getElementById("sproutsBlue").value;
     rgb = "rgb(" + red + ", " + green + ", " + blue + ")";
-    document.getElementById("darkSprouts").style.color = rgb; 
+    document.getElementById("darkSprouts").style.color = rgb;
     document.getElementById("lightSprouts").style.color = rgb;
     // members
     red = document.getElementById("membersRed").value;
     green = document.getElementById("membersGreen").value;
     blue = document.getElementById("membersBlue").value;
     rgb = "rgb(" + red + ", " + green + ", " + blue + ")";
-    document.getElementById("darkMembers").style.color = rgb; 
+    document.getElementById("darkMembers").style.color = rgb;
     document.getElementById("lightMembers").style.color = rgb;
     // beans
     red = document.getElementById("beansRed").value;
     green = document.getElementById("beansGreen").value;
     blue = document.getElementById("beansBlue").value;
     rgb = "rgb(" + red + ", " + green + ", " + blue + ")";
-    document.getElementById("darkBeans").style.color = rgb; 
+    document.getElementById("darkBeans").style.color = rgb;
     document.getElementById("lightBeans").style.color = rgb;
     // bots
     red = document.getElementById("botsRed").value;
     green = document.getElementById("botsGreen").value;
     blue = document.getElementById("botsBlue").value;
     rgb = "rgb(" + red + ", " + green + ", " + blue + ")";
-    document.getElementById("darkBots").style.color = rgb; 
+    document.getElementById("darkBots").style.color = rgb;
     document.getElementById("lightBots").style.color = rgb;
 }
 
 addEvents();
 colorText();
+
         </script>
-	</body>
+    </body>
 </html>
